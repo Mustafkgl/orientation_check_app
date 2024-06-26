@@ -22,3 +22,30 @@ Bu mobil uygulama, üniversite oryantasyon programı kapsamında öğrencilerin 
 Oryantasyon Kontrol Sistemi, öğrencilerin oryantasyon programındaki görevlerini tamamlamalarını takip etmelerine ve yönetim biriminin bu durumları kolayca kontrol etmelerine olanak tanıyan bir mobil uygulamadır. Öğrenciler, öğrenci numaralarını girerek görev tamamlama durumlarını görebilir ve yöneticiler, tüm öğrencilerin durumlarını detaylı bir şekilde inceleyebilir.
 
 ## Özellikler
+
+- **Öğrenci Girişi:** Öğrenci numarası ile giriş yaparak kişisel görev durumu görüntüleme.
+- **Görev Takibi:** Her öğrenci için tamamlanmış ve tamamlanmamış görevleri görüntüleme.
+- **Tüm Öğrenciler:** Yönetici panelinde tüm öğrencilerin görev tamamlama durumlarını listeleme.
+- **Responsive Tasarım:** Hem mobil hem de web üzerinde kullanıcı dostu arayüz.
+- **Uyarı Mesajları:** Hatalı girişlerde veya bulunamayan öğrenci durumlarında kullanıcıyı bilgilendiren mesajlar.
+
+## Kullanılan Teknolojiler
+
+- **Flutter:** Uygulamanın temel yapısı ve arayüz tasarımı için kullanılmıştır.
+- **Dart:** Flutter'ın kullandığı programlama dili.
+- **JSON:** Öğrenci verilerinin depolanması ve yönetimi için kullanılmıştır.
+- **Material Design:** Uygulamanın kullanıcı arayüzü tasarımı için.
+
+## Kurulum ve Çalıştırma
+
+### Gereksinimler
+
+- Flutter SDK
+- Dart SDK
+- Bir IDE (Önerilen: Visual Studio Code veya Android Studio)
+
+### Adımlar
+
+1. **Proje Depo Kopyalama:**
+
+   ```bash
