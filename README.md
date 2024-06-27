@@ -49,3 +49,27 @@ Oryantasyon Kontrol Sistemi, öğrencilerin oryantasyon programındaki görevler
 1. **Proje Depo Kopyalama:**
 
    ```bash
+   git clone https://github.com/kullanici_adi/oryantasyon-kontrol-sistemi.git
+   cd oryantasyon-kontrol-sistemi
+   ```
+
+2. **Bağımlılıkların Yüklenmesi:**
+
+   ```bash
+   flutter pub get
+   ```
+
+3. **Uygulamayı Çalıştırma:**
+
+   ```bash
+   flutter run
+   ```
+
+## Kullanım Kılavuzu
+
+### Ana Sayfa
+
+- **Öğrenci Numarası Girişi:** Öğrenci numarasını girerek "Kontrol Et" butonuna basın.
+- **Tüm Öğrencileri Gör:** Tüm öğrencilerin görev durumlarını listelemek için "Tüm Öğrencileri Gör" butonuna basın.
+
+### Görev Durumu Ekranı
