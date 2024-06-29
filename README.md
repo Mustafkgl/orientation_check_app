@@ -73,3 +73,30 @@ Oryantasyon Kontrol Sistemi, öğrencilerin oryantasyon programındaki görevler
 - **Tüm Öğrencileri Gör:** Tüm öğrencilerin görev durumlarını listelemek için "Tüm Öğrencileri Gör" butonuna basın.
 
 ### Görev Durumu Ekranı
+
+- Öğrenci numarası girildikten sonra, görev tamamlama durumu gösterilir.
+- Tamamlanmış görevler yeşil tik ile, tamamlanmamış görevler kırmızı çarpı ile gösterilir.
+
+### Tüm Öğrenciler Ekranı
+
+- Tüm öğrencilerin görev tamamlama durumu, numara, ad ve soyad bilgileri ile birlikte listelenir.
+- Sayfa başına 10 öğrenci gösterilir ve sayfalar arasında geçiş yapılabilir.
+
+## Katkıda Bulunma
+
+Katkıda bulunmak için:
+
+1. Bu depoyu fork'layın.
+2. Kendi branch'inizde değişiklik yapın (`git checkout -b yeni-ozellik`).
+3. Değişikliklerinizi commit yapın (`git commit -m 'Yeni özellik ekle'`).
+4. Branch'inizi push yapın (`git push origin yeni-ozellik`).
+5. Bir pull request oluşturun.
+
+<!-- updated 10 -->
+<!-- updated 11 -->
+<!-- updated 12 -->
+<!-- updated 13 -->
+<!-- updated 10 -->
+<!-- updated 11 -->
+<!-- updated 12 -->
+<!-- updated 13 -->
