@@ -71,3 +71,39 @@ add_executable(${BINARY_NAME}
 apply_standard_settings(${BINARY_NAME})
 
 # Add dependency libraries. Add any application-specific dependencies here.
+target_link_libraries(${BINARY_NAME} PRIVATE flutter)
+target_link_libraries(${BINARY_NAME} PRIVATE PkgConfig::GTK)
+
+# Run the Flutter tool portions of the build. This must not be removed.
+add_dependencies(${BINARY_NAME} flutter_assemble)
+
+# Only the install-generated bundle's copy of the executable will launch
+# correctly, since the resources must in the right relative locations. To avoid
+# people trying to run the unbundled copy, put it in a subdirectory instead of
+# the default top-level location.
+set_target_properties(${BINARY_NAME}
+  PROPERTIES
+  RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/intermediates_do_not_run"
+)
+
+
+# Generated plugin build rules, which manage building the plugins and adding
+# them to the application.
+include(flutter/generated_plugins.cmake)
+
+
+# === Installation ===
+# By default, "installing" just makes a relocatable bundle in the build
+# directory.
+set(BUILD_BUNDLE_DIR "${PROJECT_BINARY_DIR}/bundle")
+if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
+  set(CMAKE_INSTALL_PREFIX "${BUILD_BUNDLE_DIR}" CACHE PATH "..." FORCE)
+endif()
+
+# Start with a clean build bundle directory every time.
+install(CODE "
+  file(REMOVE_RECURSE \"${BUILD_BUNDLE_DIR}/\")
+  " COMPONENT Runtime)
+
+set(INSTALL_BUNDLE_DATA_DIR "${CMAKE_INSTALL_PREFIX}/data")
+set(INSTALL_BUNDLE_LIB_DIR "${CMAKE_INSTALL_PREFIX}/lib")
