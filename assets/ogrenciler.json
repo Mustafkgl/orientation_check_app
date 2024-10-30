@@ -58,3 +58,22 @@
     "name": "Mustafa",
     "surname": "Yılmaz",
     "number": "666666",
+    "task1": true,
+    "task2": true,
+    "task3": true,
+    "task4": true,
+    "task5": true,
+    "task6": true
+  },
+  {
+    "name": "Ayşe",
+    "surname": "Demir",
+    "number": "777777",
+    "task1": false,
+    "task2": false,
+    "task3": false,
+    "task4": true,
+    "task5": true,
+    "task6": true
+  }
+]
