@@ -4,3 +4,9 @@
       "idiom" : "universal",
       "filename" : "LaunchImage.png",
       "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "LaunchImage@2x.png",
+      "scale" : "2x"
+    },
