@@ -10,3 +10,9 @@
       "filename" : "LaunchImage@2x.png",
       "scale" : "2x"
     },
+    {
+      "idiom" : "universal",
+      "filename" : "LaunchImage@3x.png",
+      "scale" : "3x"
+    }
+  ],
